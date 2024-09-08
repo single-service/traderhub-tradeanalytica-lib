@@ -11,10 +11,10 @@ setup(
   version='0.0.1',
   author='DmitriySosedov',
   author_email='d.i.sosedov@gmail.com',
-  description='This is the simplest module for quick work with files.',
+  description='TraderHub library for trade strategy analyse',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url='https://github.com/single-service/traderhub-tradeanalytica-lib',
+  url='https://github.com/sosedov/traderhub-tradeanalytica-lib',
   packages=find_packages(),
   install_requires=[
         'pandas>=2.2.2',
@@ -24,7 +24,7 @@ setup(
         'sortedcontainers>=2.4.0',
       ],
   classifiers=[
-    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.10',
     'License :: OSI Approved :: MIT License',
     'Operating System :: OS Independent'
   ],
@@ -32,5 +32,5 @@ setup(
   project_urls={
     'GitHub': 'single-service'
   },
-  python_requires='>=3.9'
+  python_requires='>=3.10'
 )
