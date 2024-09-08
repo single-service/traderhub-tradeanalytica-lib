@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='traderhub_tradeanalytica',
-  version='0.0.1',
+  version='0.0.2',
   author='DmitriySosedov',
   author_email='d.i.sosedov@gmail.com',
   description='TraderHub library for trade strategy analyse',
