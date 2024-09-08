@@ -8,13 +8,13 @@ def readme():
 
 setup(
   name='traderhub_tradeanalytica',
-  version='0.0.2',
+  version='0.0.3',
   author='DmitriySosedov',
   author_email='d.i.sosedov@gmail.com',
   description='TraderHub library for trade strategy analyse',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url='https://github.com/sosedov/traderhub-tradeanalytica-lib',
+  url='https://github.com/single-service/traderhub-tradeanalytica-lib',
   packages=find_packages(),
   install_requires=[
         'pandas>=2.2.2',
@@ -30,7 +30,7 @@ setup(
   ],
   keywords='trade analytica backtesting traderhub ',
   project_urls={
-    'GitHub': 'https://github.com/sosedov/traderhub-tradeanalytica-lib'
+    'GitHub': 'https://github.com/single-service/traderhub-tradeanalytica-lib'
   },
   python_requires='>=3.10'
 )
