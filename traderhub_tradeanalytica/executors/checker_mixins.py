@@ -54,7 +54,12 @@ class IndicatorCheckerMixin:
             d=d_value,
             offset=shift
         )
-        values = data[f'STOCHk_{k_value}_{slow_value}_{d_value}'] if add_parametres["Indicator Buffer"] == "Base line" else data[f'STOCHd_{k_value}_{slow_value}_{d_value}']  # noqa
+        identifier_column = "STOCHk" if add_parametres["Indicator Buffer"] == "Base line" else "STOCHd"
+
+        column_name = [x for x in data.columns if x.split("_")[0] == identifier_column]
+        if not column_name:
+            return None
+        values = data[column_name[0]]
         return values
 
     def get_abberation(self, add_parametres, shift):
