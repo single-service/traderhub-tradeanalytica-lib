@@ -1,8 +1,8 @@
 import pandas_ta as ta
 import talib
 
-from references.indicators_models.indicators_talib_map import get_indicators_talib_data, get_prefix, find_indicator_column
-from executors.patternpy.functions_map import TRADEPATTERNS_MAP
+from ..references.indicators_models.indicators_talib_map import get_indicators_talib_data, get_prefix, find_indicator_column
+from ..executors.patternpy.functions_map import TRADEPATTERNS_MAP
 
 
 class BacktestStrategyInitializer:
