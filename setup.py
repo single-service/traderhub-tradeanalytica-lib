@@ -30,7 +30,7 @@ setup(
   ],
   keywords='trade analytica backtesting traderhub ',
   project_urls={
-    'GitHub': 'single-service'
+    'GitHub': 'https://github.com/sosedov/traderhub-tradeanalytica-lib'
   },
   python_requires='>=3.10'
 )
