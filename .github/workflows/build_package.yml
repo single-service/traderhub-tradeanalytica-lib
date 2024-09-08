@@ -29,6 +29,7 @@ jobs:
       - name: Publish to GitHub Packages
         run: |
           python -m pip install twine
+          twine check dist/*
           twine upload --repository-url https://upload.pypi.org/legacy/ dist/* --verbose
         env:
           TWINE_USERNAME: ${{ secrets.PYPI_USER }}
