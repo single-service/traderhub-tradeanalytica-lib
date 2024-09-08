@@ -10,7 +10,7 @@ setup(
   name='traderhub_tradeanalytica',
   version='0.0.1',
   author='single-service',
-  author_email='singleservice2022@gmail.com',
+  author_email='d.i.sosedov@gmail.com',
   description='This is the simplest module for quick work with files.',
   long_description=readme(),
   long_description_content_type='text/markdown',
