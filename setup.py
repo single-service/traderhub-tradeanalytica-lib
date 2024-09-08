@@ -14,7 +14,7 @@ setup(
   description='This is the simplest module for quick work with files.',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url='https://traderhub.com/',
+  url='https://github.com/single-service/traderhub-tradeanalytica-lib',
   packages=find_packages(),
   install_requires=[
         'pandas>=2.2.2',
