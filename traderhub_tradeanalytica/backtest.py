@@ -21,15 +21,14 @@ from .mixins import MetricProcessor, BacktestStrategyInitializer
 
 class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
 
-    def __init__(self, data, strategy, trend_type):
+    def __init__(self, data, strategy, trend_type, point, spread):
         self.strategy = strategy
         self.data = data
         self.closed_trades = []
-        self.ohlcv = []
         self.signal_step = 0
         self.open_trades = {}
-        self.point = 0.0001
-        self.spread = 15 * self.point
+        self.point = point
+        self.spread = spread
         self.initial_capital = 100000  # начальный капитал
         self.trend_type = trend_type
 
