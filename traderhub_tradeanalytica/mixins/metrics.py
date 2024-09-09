@@ -4,15 +4,6 @@ import pandas as pd
 
 class MetricProcessor:
     def calculate_main_metrics(self):
-        if self.closed_trades is None:
-            return {
-                "full_deals_cnt": 0,
-                "full_deals_saldo": 0,
-                "profit_deals_cnt": 0,
-                "prodfit_deals_saldo": 0,
-                "loss_deals_cnt": 0,
-                "loss_deals_saldo": 0,
-            }
         profit_orders = [x['profit'] for x in self.closed_trades if x['profit'] > 0]
         loss_orders = [x['profit'] for x in self.closed_trades if x['profit'] <= 0]
         return {
@@ -25,6 +16,8 @@ class MetricProcessor:
         }
 
     def calculate_additional_metrics(self):
+        if len(self.closed_trades) == 0:
+            return None
         df_trades = pd.DataFrame(self.closed_trades)
         # 1. Временные метрики
         start_date = self.data.index[0]
