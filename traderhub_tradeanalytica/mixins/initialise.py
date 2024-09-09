@@ -49,7 +49,7 @@ class BacktestStrategyInitializer:
             description="Strategy description",
             ta=[v for _, v in self.indicators_map.items()]
         )
-        self.data.ta.strategy(CustomStrategy)
+        self.data.ta.strategy(CustomStrategy, mp_context="forkserver")
 
     def _collect_indicators(self):
         indicators_map = {}

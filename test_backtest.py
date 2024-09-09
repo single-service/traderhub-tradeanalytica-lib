@@ -8,7 +8,7 @@ from traderhub_tradeanalytica import ConditionChecker, BacktestStrategyProcessor
 
 class BacktestTest(TestCase):
     def setUp(self):
-        strategy_file_path = f"test_data/head_shoulders.json"
+        strategy_file_path = f"test_data/3EMA.json"
         with open(strategy_file_path, "r") as json_file:
             self.strategy = json.load(json_file)
         candles_path = f"test_data/EURUSD_60_2016-01-01_2024-06-01.csv"
@@ -40,6 +40,8 @@ class BacktestTest(TestCase):
             main_metrics = backtest_service.calculate_main_metrics()
             additional_metrics = backtest_service.calculate_additional_metrics()
             main_metrics['additional_metrics'] = additional_metrics
+            if additional_metrics is None:
+                return
             report_params = {
                 **main_metrics,
                 **additional_metrics
