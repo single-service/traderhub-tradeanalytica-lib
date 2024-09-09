@@ -180,13 +180,13 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         self.exit_deal['take-profit-value'] = 4
         sl_type = self.exit_deal['stop-loss-type']
         if sl_type == "fixed":
-            sl_points = self.exit_deal['stop-loss-value']
+            sl_points = int(self.exit_deal['stop-loss-value'])
             if self.trend_type == "buy":
                 sl_price = open_price - sl_points * self.point  # Рассчитываем цену стоп-лосса
             else:
-                sl_price = open_price + sl_points * self.point  # Рассчитываем цену стоп-лосса
+                sl_price = open_price + (sl_points * self.point)  # Рассчитываем цену стоп-лосса
         if sl_type == "dynamic":
-            candles_count = self.exit_deal['stop-loss-value']
+            candles_count = int(self.exit_deal['stop-loss-value'])
             if self.trend_type == "buy":
                 sl_price = min([
                     x['Low'] for x in previos_candles[len(previos_candles) - 1 -candles_count:]
@@ -197,13 +197,13 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 ])
         tp_type = self.exit_deal['take-profit-type']
         if tp_type == "fixed":
-            tp_points = self.exit_deal['take-profit-value']
+            tp_points = int(self.exit_deal['take-profit-value'])
             if self.trend_type == "buy":
                 tp_price = open_price + tp_points * self.point  # Рассчитываем цену тейк-профита
             else:
                 tp_price = open_price - tp_points * self.point  # Рассчитываем цену тейк профита
         if tp_type == "dynamic":
-            candles_count = self.exit_deal['take-profit-value']
+            candles_count = int(self.exit_deal['take-profit-value'])
             if self.trend_type == "buy":
                 tp_price = max([
                     x['High'] for x in previos_candles[len(previos_candles) - 1 -candles_count:]
@@ -213,7 +213,7 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                     x['Low'] for x in previos_candles[len(previos_candles) - 1 -candles_count:]
                 ])
         if tp_type == "relative":
-            multiply_value = self.exit_deal['take-profit-value']
+            multiply_value = int(self.exit_deal['take-profit-value'])
             if self.trend_type == "buy":
                 base_points = (open_price - sl_price) / self.point
                 tp_points = base_points * multiply_value

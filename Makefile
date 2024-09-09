@@ -12,4 +12,4 @@ lint:
 run_test:
 	python3 setup.py sdist bdist_wheel
 	pip install dist/traderhub_tradeanalytica-0.0.3-py3-none-any.whl
-	python3 -m unittest test.py
+	python3 -m unittest test_backtest.py
