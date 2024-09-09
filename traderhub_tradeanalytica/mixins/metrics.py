@@ -104,7 +104,7 @@ class MetricProcessor:
         }
         for key in report:
             if key not in not_round_fields:
-                if np.isnan(report[key]):
+                if str(report[key]) == "nan":
                     report[key] = 0
                 report[key] = round(report[key], 2)
         return report
