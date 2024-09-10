@@ -74,8 +74,10 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         previous_candles = []
         for index, row in self._dataframe_generator(self.data):
             previous_candles.append(row)
-            if len(previous_candles) > 10:
+            if len(previous_candles) > 50:
                 previous_candles = previous_candles[1:]
+            else:
+                continue
             # Условия для открытия сделки
             current_condition = self.entry_deal[self.trend_type][self.signal_step]
             current_date = datetime.strptime(str(index), "%Y-%m-%d %H:%M:%S")
@@ -106,6 +108,9 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 trade['close_time'] = current_date
                 trade['result'] = 'SL'
                 trade['profit'] = trade['sl_result']
+                if self.with_ai:
+                    data4predict = self.prediction_service.get_predict_data([x.values for x in previous_candles])
+                    trade['data4predict'] = data4predict
                 self.closed_trades.append(trade)
                 del self.open_trades[open_index]
                 del sl_open_trades[i]
@@ -124,17 +129,34 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 trade['close_time'] = current_date
                 trade['result'] = 'TP'
                 trade['profit'] = trade['tp_result']
+                if self.with_ai:
+                    data4predict = self.prediction_service.get_predict_data([x.values for x in previous_candles])
+                    trade['data4predict'] = data4predict
                 self.closed_trades.append(trade)
                 del self.open_trades[open_index]
                 del tp_open_trades[i]
         del sl_open_trades
         del tp_open_trades
         del previous_candles
-        end_time = time.time() -start_time
-        print(end_time)
+        if self.with_ai and len(self.closed_trades) > 0:
+            predictions = []
+            batch_size = 10000
+            batches_count = len(self.closed_trades) // batch_size
+            if len(self.closed_trades) % batch_size > 0:
+                batches_count += 1
+            for batch_step in range(batches_count):
+                current_data4predict = [x['data4predict'] for x in self.closed_trades[batch_step*batch_size:(batch_step + 1)*batch_size]]
+                batch_predictions, error = self.prediction_service.predict_batch(current_data4predict, self.trend_type)
+                if not batch_predictions:
+                    raise Exception(f"Prediction Error: {error}")
+                
+                predictions += batch_predictions['predictions']
+            self.closed_trades = [self.closed_trades[i] for i, val in enumerate(predictions) if val['prediction'] is True]
         metrics = self.calculate_main_metrics()
         additional_metrics = self.calculate_additional_metrics()
         metrics['additional_metrics'] = additional_metrics
+        end_time = time.time() -start_time
+        print(end_time)
         return metrics
 
     def get_condition_value(self, condition, candles_data, previous_candles):
