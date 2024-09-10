@@ -1,3 +1,5 @@
+import math
+
 import numpy as np
 import pandas as pd
 
@@ -103,8 +105,13 @@ class MetricProcessor:
             "max_trade_duration", "avg_trade_duration"
         }
         for key in report:
-            if str(report[key]) == "nan" or "infinity" in str(report[key]).lower():
+            if str(report[key]) == "nan":
                 report[key] = 0
+            try:
+                if not math.isfinite(report[key]):
+                    report[key] = 0
+            except Exception:
+                pass
             if key not in not_round_fields:
                 report[key] = round(report[key], 2)
         return report
