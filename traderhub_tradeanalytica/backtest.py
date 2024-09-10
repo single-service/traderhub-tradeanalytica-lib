@@ -21,7 +21,7 @@ from .mixins import MetricProcessor, BacktestStrategyInitializer
 
 class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
 
-    def __init__(self, data, strategy, trend_type, point, spread):
+    def __init__(self, data, strategy, trend_type, point, spread, is_multiprocessing=False):
         self.strategy = strategy
         self.data = data
         self.closed_trades = []
@@ -31,6 +31,7 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         self.spread = spread
         self.initial_capital = 100000  # начальный капитал
         self.trend_type = trend_type
+        self.is_multiprocessing = is_multiprocessing
 
     def _dataframe_generator(self, df):
         for index, row in df.iterrows():

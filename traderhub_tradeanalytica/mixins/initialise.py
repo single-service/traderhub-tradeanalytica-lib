@@ -49,6 +49,8 @@ class BacktestStrategyInitializer:
             description="Strategy description",
             ta=[v for _, v in self.indicators_map.items()]
         )
+        if not self.is_multiprocessing:
+            self.data.ta.cores = 0
         self.data.ta.strategy(CustomStrategy, mp_context="forkserver")
 
     def _collect_indicators(self):
