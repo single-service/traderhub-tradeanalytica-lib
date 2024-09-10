@@ -8,7 +8,7 @@ from traderhub_tradeanalytica import ConditionChecker, BacktestStrategyProcessor
 
 class BacktestTest(TestCase):
     def setUp(self):
-        strategy_file_path = f"test_data/3EMA.json"
+        strategy_file_path = f"test_data/stohastic_trategy.json"
         with open(strategy_file_path, "r") as json_file:
             self.strategy = json.load(json_file)
         candles_path = f"test_data/EURUSD_60_2016-01-01_2024-06-01.csv"

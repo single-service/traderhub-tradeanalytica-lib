@@ -1,3 +1,5 @@
+import inspect
+
 import pandas_ta as ta
 import talib
 
@@ -44,14 +46,23 @@ class BacktestStrategyInitializer:
         print("startegy_converter success")
         
     def _convert_data_by_indicators_map(self):
-        CustomStrategy = ta.Strategy(
-            name="My strategy",
-            description="Strategy description",
-            ta=[v for _, v in self.indicators_map.items()]
-        )
-        if not self.is_multiprocessing:
-            self.data.ta.cores = 0
-        self.data.ta.strategy(CustomStrategy, mp_context="forkserver")
+        indicators_without_stoch = [v for _, v in self.indicators_map.items() if v['kind'] != "stoch"]
+        if indicators_without_stoch:
+            CustomStrategy = ta.Strategy(
+                name="My strategy",
+                description="Strategy description",
+                ta=indicators_without_stoch
+            )
+            if not self.is_multiprocessing:
+                self.data.ta.cores = 0
+            self.data.ta.strategy(CustomStrategy, mp_context="forkserver")
+        stoch_indicators = [v for _, v in self.indicators_map.items() if v['kind'] == "stoch"]
+        for indicator in stoch_indicators:
+            slowk, slowd = talib.STOCH(self.data['High'], self.data['Low'], self.data['Close'], fastk_period=indicator['k'], slowk_period=indicator['smooth_k'], slowd_period=indicator['d']) 
+            self.data[f"{indicator['prefix']}_STOCHk_"] = slowk
+            self.data[f"{indicator['prefix']}_STOCHd_"] = slowd
+            del slowk
+            del slowd
 
     def _collect_indicators(self):
         indicators_map = {}
