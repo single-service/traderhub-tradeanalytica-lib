@@ -32,6 +32,11 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         self.initial_capital = 100000  # начальный капитал
         self.trend_type = trend_type
         self.is_multiprocessing = is_multiprocessing
+        self.with_ai = False
+
+    def set_with_ai(self, prediction_service):
+        self.with_ai = True
+        self.prediction_service = prediction_service
 
     def _dataframe_generator(self, df):
         for index, row in df.iterrows():
@@ -127,6 +132,10 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         del previous_candles
         end_time = time.time() -start_time
         print(end_time)
+        metrics = self.calculate_main_metrics()
+        additional_metrics = self.calculate_additional_metrics()
+        metrics['additional_metrics'] = additional_metrics
+        return metrics
 
     def get_condition_value(self, condition, candles_data, previous_candles):
         result = None
