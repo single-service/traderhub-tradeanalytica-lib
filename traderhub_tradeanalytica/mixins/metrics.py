@@ -103,7 +103,7 @@ class MetricProcessor:
             "max_trade_duration", "avg_trade_duration"
         }
         for key in report:
-            if str(report[key]) == "nan":
+            if str(report[key]) == "nan" or "infinity" in str(report[key]).lower():
                 report[key] = 0
             if key not in not_round_fields:
                 report[key] = round(report[key], 2)

@@ -126,8 +126,8 @@ class BacktestPredictionTest(TestCase):
             if trade_type == "sell":
                 continue
             backtest_service = BacktestStrategyProcessor(self.candles, self.strategy, trade_type, point, spread)
-            prediction_host = "https://prediction.dev.traderhub.ru"
-            prediction_token = "c29zZWRvdjo0NVJPU18hX2hlbjI1"
+            prediction_host = ""
+            prediction_token = ""
             prediction_service = PredictionService(prediction_host, prediction_token)
             backtest_service.set_with_ai(prediction_service)
             metrics = backtest_service.process_strategy()
