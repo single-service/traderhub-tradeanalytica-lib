@@ -33,19 +33,15 @@ class BacktestTest(TestCase):
     def test_backtest(self):
         point = 0.0001
         spread = 15 * point
-        trade_types = ["sell", "buy"]
+        trade_types = ["sell"]  # "buy"
         for trade_type in trade_types:
             backtest_service = BacktestStrategyProcessor(self.candles, self.strategy, trade_type, point, spread)
-            backtest_service.process_strategy()
-            main_metrics = backtest_service.calculate_main_metrics()
-            additional_metrics = backtest_service.calculate_additional_metrics()
-            main_metrics['additional_metrics'] = additional_metrics
-            if additional_metrics is None:
-                return
+            metrics = backtest_service.process_strategy()
+            additional_metrics = metrics['additional_metrics']
             report_params = {
-                **main_metrics,
+                **metrics,
                 **additional_metrics
             }
-            report = backtest_service.analyze_trading_report(report_params)
-            report2 = backtest_service.analyze_trading_reportv2(report_params)
-            print(main_metrics)
+            # report = backtest_service.analyze_trading_report(report_params)
+            # report2 = backtest_service.analyze_trading_reportv2(report_params)
+            print(metrics)

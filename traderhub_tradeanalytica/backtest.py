@@ -48,7 +48,7 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
             return
         open_price = self.get_current_price(row['Close'])
         sl_price, tp_price = self.get_trade_limits(open_price, previous_candles)
-        tp_result = round((tp_price - open_price) / self.point * self.lot, 2)
+        tp_result = round((tp_price - open_price) / self.point * self.lot, 2) if self.trend_type == "buy" else round((open_price - tp_price) / self.point * self.lot, 2)
         sl_result = round((sl_price - open_price) / self.point * self.lot, 2) if self.trend_type == "buy" else round((open_price - sl_price) / self.point * self.lot, 2)
 
         self.open_trades[str(index)] = {
@@ -114,7 +114,7 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 self.closed_trades.append(trade)
                 del self.open_trades[open_index]
                 del sl_open_trades[i]
-            
+
             for i in range(len(tp_open_trades) -1, 0, -1):
                 val = tp_open_trades[i][0]
                 open_index = tp_open_trades[i][1]
@@ -129,6 +129,7 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 trade['close_time'] = current_date
                 trade['result'] = 'TP'
                 trade['profit'] = trade['tp_result']
+                print(trade['result'], trade['profit'])
                 if self.with_ai:
                     data4predict = self.prediction_service.get_predict_data([x.values for x in previous_candles])
                     trade['data4predict'] = data4predict
