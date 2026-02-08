@@ -18,10 +18,10 @@ setup(
   packages=find_packages(),
   install_requires=[
         'pandas>=2.2.2',
-        'TA-Lib-Precompiled>=0.4.25',
-        'numpy>=1.24.2,<1.26.0',
-        'pandas_ta>=0.3.14b',
+        'numpy>=2.0.0',
+        'pandas-ta-classic>=0.3.59',
         'sortedcontainers>=2.4.0',
+        'requests>=2.32.5',
       ],
   classifiers=[
     'Programming Language :: Python :: 3.10',

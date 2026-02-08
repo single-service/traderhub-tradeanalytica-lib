@@ -1,9 +1,13 @@
 import json
+import warnings
 from unittest import TestCase
 
 import pandas as pd
 
 from traderhub_tradeanalytica import ConditionChecker, BacktestStrategyProcessor
+
+# Отключить все warnings
+warnings.filterwarnings('ignore')
 
 
 class BacktestTest(TestCase):

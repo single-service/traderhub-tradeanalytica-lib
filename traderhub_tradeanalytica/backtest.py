@@ -129,7 +129,6 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 trade['close_time'] = current_date
                 trade['result'] = 'TP'
                 trade['profit'] = trade['tp_result']
-                print(trade['result'], trade['profit'])
                 if self.with_ai:
                     data4predict = self.prediction_service.get_predict_data([x.values for x in previous_candles])
                     trade['data4predict'] = data4predict
@@ -157,7 +156,6 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         additional_metrics = self.calculate_additional_metrics()
         metrics['additional_metrics'] = additional_metrics
         end_time = time.time() -start_time
-        print(end_time)
         return metrics
 
     def get_condition_value(self, condition, candles_data, previous_candles):

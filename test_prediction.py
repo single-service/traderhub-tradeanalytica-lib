@@ -1,5 +1,6 @@
 import os
 import json
+import warnings
 from unittest import TestCase
 
 import requests
@@ -8,6 +9,9 @@ import talib
 import numpy as np
 
 from traderhub_tradeanalytica import BacktestStrategyProcessor
+
+# Отключить все warnings
+warnings.filterwarnings('ignore')
 
 
 class PredictionService:

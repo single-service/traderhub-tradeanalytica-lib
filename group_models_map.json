@@ -1,0 +1,2422 @@
+[
+    {
+        "name": "Aberration",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "ATR Period",
+                "type": "int",
+                "selections": null,
+                "default": 15
+            },
+            {
+                "name": "ATR Type",
+                "type": "select",
+                "selections": [
+                    "zg",
+                    "sg",
+                    "xg",
+                    "atr"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Absolute Price Oscillator",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 26
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Accumulation/Distribution Index",
+        "parametres": [
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Aroon",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "Aroon Type",
+                "type": "select",
+                "selections": [
+                    "aroon_up",
+                    "aroon_down",
+                    "aroon_osc"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Average Directional Index (ADX)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "ADX Type",
+                "type": "select",
+                "selections": [
+                    "adx",
+                    "dmp",
+                    "dmn"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Average True Range",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Awesome Oscillator",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 34
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Chaikin Money Flow",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Commodity Channel Index (CCI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "C",
+                "type": "float",
+                "selections": null,
+                "default": 0.015
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Donchian Channel",
+        "parametres": [
+            {
+                "name": "Low Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Up Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Donchian Type",
+                "type": "select",
+                "selections": [
+                    "lower",
+                    "mid",
+                    "upper"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Even Better Sinewave",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 40
+            },
+            {
+                "name": "Bars",
+                "type": "int",
+                "selections": null,
+                "default": 10
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Fibonacci's Weighted Moving Average",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 10
+            },
+            {
+                "name": "ASC",
+                "type": "bool",
+                "selections": null,
+                "default": true
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Fisher Transform",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 1
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Gann High-Low Activator",
+        "parametres": [
+            {
+                "name": "High Period",
+                "type": "int",
+                "selections": null,
+                "default": 13
+            },
+            {
+                "name": "Low Period",
+                "type": "int",
+                "selections": null,
+                "default": 21
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Type",
+                "type": "select",
+                "selections": [
+                    "HILO (line)",
+                    "HILOl (long)",
+                    "HILOs (short)"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Keltner Channel",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 2
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Channel Type",
+                "type": "select",
+                "selections": [
+                    "lower",
+                    "basis",
+                    "upper"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "MACD",
+        "parametres": [
+            {
+                "name": "Fast EMA",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Slow EMA",
+                "type": "int",
+                "selections": null,
+                "default": 26
+            },
+            {
+                "name": "MACD SMA",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Buffer",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Mass Index",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 25
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Momentum",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Money Flow Index",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Moving Average",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "On Balance Volume",
+        "parametres": [
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Relative Strength Index (RSI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Relative Vigor Index (RVGI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "SWMA Period",
+                "type": "int",
+                "selections": null,
+                "default": 4
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Stohastic Oscillator",
+        "parametres": [
+            {
+                "name": "K",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "D",
+                "type": "int",
+                "selections": null,
+                "default": 3
+            },
+            {
+                "name": "Smooth K",
+                "type": "int",
+                "selections": null,
+                "default": 2
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Price Field",
+                "type": "select",
+                "selections": [
+                    "Low/High",
+                    "Close/Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Buffer",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "True Strength Index (TSI)",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 13
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 25
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Type",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Vertical Horizontal Filter",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Vortex",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Vortex Type",
+                "type": "select",
+                "selections": [
+                    "vip",
+                    "vim"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    }
+]
+GROUP_MODELS_MAP [
+    {
+        "name": "Aberration",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "ATR Period",
+                "type": "int",
+                "selections": null,
+                "default": 15
+            },
+            {
+                "name": "ATR Type",
+                "type": "select",
+                "selections": [
+                    "zg",
+                    "sg",
+                    "xg",
+                    "atr"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Absolute Price Oscillator",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 26
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Accumulation/Distribution Index",
+        "parametres": [
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Aroon",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "Aroon Type",
+                "type": "select",
+                "selections": [
+                    "aroon_up",
+                    "aroon_down",
+                    "aroon_osc"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Average Directional Index (ADX)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "ADX Type",
+                "type": "select",
+                "selections": [
+                    "adx",
+                    "dmp",
+                    "dmn"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Average True Range",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Awesome Oscillator",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 34
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Chaikin Money Flow",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Commodity Channel Index (CCI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "C",
+                "type": "float",
+                "selections": null,
+                "default": 0.015
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Donchian Channel",
+        "parametres": [
+            {
+                "name": "Low Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Up Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Donchian Type",
+                "type": "select",
+                "selections": [
+                    "lower",
+                    "mid",
+                    "upper"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Even Better Sinewave",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 40
+            },
+            {
+                "name": "Bars",
+                "type": "int",
+                "selections": null,
+                "default": 10
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Fibonacci's Weighted Moving Average",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 10
+            },
+            {
+                "name": "ASC",
+                "type": "bool",
+                "selections": null,
+                "default": true
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Fisher Transform",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 1
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Gann High-Low Activator",
+        "parametres": [
+            {
+                "name": "High Period",
+                "type": "int",
+                "selections": null,
+                "default": 13
+            },
+            {
+                "name": "Low Period",
+                "type": "int",
+                "selections": null,
+                "default": 21
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Type",
+                "type": "select",
+                "selections": [
+                    "HILO (line)",
+                    "HILOl (long)",
+                    "HILOs (short)"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Keltner Channel",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 2
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Channel Type",
+                "type": "select",
+                "selections": [
+                    "lower",
+                    "basis",
+                    "upper"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "MACD",
+        "parametres": [
+            {
+                "name": "Fast EMA",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Slow EMA",
+                "type": "int",
+                "selections": null,
+                "default": 26
+            },
+            {
+                "name": "MACD SMA",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Buffer",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Mass Index",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 25
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Momentum",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Money Flow Index",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Moving Average",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "On Balance Volume",
+        "parametres": [
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Relative Strength Index (RSI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Relative Vigor Index (RVGI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "SWMA Period",
+                "type": "int",
+                "selections": null,
+                "default": 4
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Stohastic Oscillator",
+        "parametres": [
+            {
+                "name": "K",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "D",
+                "type": "int",
+                "selections": null,
+                "default": 3
+            },
+            {
+                "name": "Smooth K",
+                "type": "int",
+                "selections": null,
+                "default": 2
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Price Field",
+                "type": "select",
+                "selections": [
+                    "Low/High",
+                    "Close/Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Buffer",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "True Strength Index (TSI)",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 13
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 25
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Type",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Vertical Horizontal Filter",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Vortex",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Vortex Type",
+                "type": "select",
+                "selections": [
+                    "vip",
+                    "vim"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    }
+]
+  Stopping...
+GROUP_MODELS_MAP [
+    {
+        "name": "Aberration",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "ATR Period",
+                "type": "int",
+                "selections": null,
+                "default": 15
+            },
+            {
+                "name": "ATR Type",
+                "type": "select",
+                "selections": [
+                    "zg",
+                    "sg",
+                    "xg",
+                    "atr"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Absolute Price Oscillator",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 26
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Accumulation/Distribution Index",
+        "parametres": [
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Aroon",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "Aroon Type",
+                "type": "select",
+                "selections": [
+                    "aroon_up",
+                    "aroon_down",
+                    "aroon_osc"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Average Directional Index (ADX)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "ADX Type",
+                "type": "select",
+                "selections": [
+                    "adx",
+                    "dmp",
+                    "dmn"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Average True Range",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Awesome Oscillator",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 34
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Chaikin Money Flow",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Commodity Channel Index (CCI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "C",
+                "type": "float",
+                "selections": null,
+                "default": 0.015
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Donchian Channel",
+        "parametres": [
+            {
+                "name": "Low Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Up Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Donchian Type",
+                "type": "select",
+                "selections": [
+                    "lower",
+                    "mid",
+                    "upper"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Even Better Sinewave",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 40
+            },
+            {
+                "name": "Bars",
+                "type": "int",
+                "selections": null,
+                "default": 10
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Fibonacci's Weighted Moving Average",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 10
+            },
+            {
+                "name": "ASC",
+                "type": "bool",
+                "selections": null,
+                "default": true
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Fisher Transform",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 1
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Gann High-Low Activator",
+        "parametres": [
+            {
+                "name": "High Period",
+                "type": "int",
+                "selections": null,
+                "default": 13
+            },
+            {
+                "name": "Low Period",
+                "type": "int",
+                "selections": null,
+                "default": 21
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Type",
+                "type": "select",
+                "selections": [
+                    "HILO (line)",
+                    "HILOl (long)",
+                    "HILOs (short)"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Keltner Channel",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 20
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 2
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Channel Type",
+                "type": "select",
+                "selections": [
+                    "lower",
+                    "basis",
+                    "upper"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "MACD",
+        "parametres": [
+            {
+                "name": "Fast EMA",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Slow EMA",
+                "type": "int",
+                "selections": null,
+                "default": 26
+            },
+            {
+                "name": "MACD SMA",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Buffer",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Mass Index",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 9
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 25
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Momentum",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Money Flow Index",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Moving Average",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "On Balance Volume",
+        "parametres": [
+            {
+                "name": "Apply To",
+                "type": "select",
+                "selections": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Relative Strength Index (RSI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Relative Vigor Index (RVGI)",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "SWMA Period",
+                "type": "int",
+                "selections": null,
+                "default": 4
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Stohastic Oscillator",
+        "parametres": [
+            {
+                "name": "K",
+                "type": "int",
+                "selections": null,
+                "default": 5
+            },
+            {
+                "name": "D",
+                "type": "int",
+                "selections": null,
+                "default": 3
+            },
+            {
+                "name": "Smooth K",
+                "type": "int",
+                "selections": null,
+                "default": 2
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Price Field",
+                "type": "select",
+                "selections": [
+                    "Low/High",
+                    "Close/Close"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Buffer",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "True Strength Index (TSI)",
+        "parametres": [
+            {
+                "name": "Fast",
+                "type": "int",
+                "selections": null,
+                "default": 13
+            },
+            {
+                "name": "Slow",
+                "type": "int",
+                "selections": null,
+                "default": 25
+            },
+            {
+                "name": "Signal Period",
+                "type": "int",
+                "selections": null,
+                "default": 12
+            },
+            {
+                "name": "Scalar",
+                "type": "float",
+                "selections": null,
+                "default": 100
+            },
+            {
+                "name": "MA Method",
+                "type": "select",
+                "selections": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            {
+                "name": "Indicator Type",
+                "type": "select",
+                "selections": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Vertical Horizontal Filter",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    },
+    {
+        "name": "Vortex",
+        "parametres": [
+            {
+                "name": "Period",
+                "type": "int",
+                "selections": null,
+                "default": 14
+            },
+            {
+                "name": "Vortex Type",
+                "type": "select",
+                "selections": [
+                    "vip",
+                    "vim"
+                ],
+                "default": null
+            },
+            {
+                "name": "Shift",
+                "type": "int",
+                "selections": null,
+                "default": 0
+            }
+        ]
+    }
+]

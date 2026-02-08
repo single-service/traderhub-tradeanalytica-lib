@@ -353,3 +353,7 @@ apps/media/
 apps/static/
 apps/.config/
 script_folder/*
+
+# Constructor generated files
+strategies/
+metrics/

@@ -21,9 +21,9 @@ MOMENTUM_PARAMS = {
         ("Shift", "int", 0, "offset",),
     ],
     "Stohastic Oscillator": [
-        ("%K Period", "int", 5, "k",),
-        ("%D Period", "int", 3, "d"),
-        ("Slowing", "int", 2, "smooth_k"),
+        ("K", "int", 5, "k",),
+        ("D", "int", 3, "d"),
+        ("Smooth K", "int", 2, "smooth_k"),
         ("MA Method", "select", MA_METHODS, "mamode"),
         ("Price Field", "select", ["Low/High", "Close/Close"], None,),
         ("Indicator Buffer", "select", LINES_CHOICES, None,),
