@@ -92,7 +92,7 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 self.handle_trade_opening(index, row, current_date, previous_candles, sl_open_trades, tp_open_trades)
 
             # Проверяем открытые сделки на стоп-лосс или тейк-профит
-            for i in range(len(sl_open_trades) -1, 0, -1):
+            for i in range(len(sl_open_trades) -1, -1, -1):
                 val = sl_open_trades[i][0]
                 open_index = sl_open_trades[i][1]
                 if not self.open_trades.get(open_index):
@@ -115,13 +115,13 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
                 del self.open_trades[open_index]
                 del sl_open_trades[i]
 
-            for i in range(len(tp_open_trades) -1, 0, -1):
+            for i in range(len(tp_open_trades) -1, -1, -1):
                 val = tp_open_trades[i][0]
                 open_index = tp_open_trades[i][1]
                 if not self.open_trades.get(open_index):
                     del tp_open_trades[i]
                     continue
-                if (val < row['High'] and self.trend_type == "buy") or (val > row['Low'] and self.trend_type == "sell"):
+                if (val > row['High'] and self.trend_type == "buy") or (val < row['Low'] and self.trend_type == "sell"):
                     break
                 trade = self.open_trades[open_index]
                 trade['close_index'] = current_date
@@ -155,7 +155,6 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         metrics = self.calculate_main_metrics()
         additional_metrics = self.calculate_additional_metrics()
         metrics['additional_metrics'] = additional_metrics
-        end_time = time.time() -start_time
         return metrics
 
     def get_condition_value(self, condition, candles_data, previous_candles):
@@ -207,8 +206,6 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
         return result
 
     def get_trade_limits(self, open_price, previos_candles):
-        self.exit_deal['take-profit-type'] = "relative"
-        self.exit_deal['take-profit-value'] = 4
         sl_type = self.exit_deal['stop-loss-type']
         if sl_type == "fixed":
             sl_points = int(self.exit_deal['stop-loss-value'])
@@ -257,8 +254,8 @@ class BacktestStrategyProcessor(BacktestStrategyInitializer, MetricProcessor):
 
     def get_current_price(self, price_value):
         if self.trend_type == "buy":
-            return price_value - self.spread * self.point
-        return price_value + self.spread * self.point
+            return price_value + self.spread * self.point
+        return price_value - self.spread * self.point
 
 
     def check_condition(self, left, right, delimiter):

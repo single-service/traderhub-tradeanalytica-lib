@@ -1,0 +1,319 @@
+{
+    "indicators": {
+        "Aberration": {
+            "Period": {
+                "type": "int",
+                "values": [5, 10, 20, 50, 100]
+            },
+            "ATR Period": {
+                "type": "int",
+                "values": [15, 21, 50]
+            }
+        },
+        "Absolute Price Oscillator": {
+            "Fast": {
+                "type": "int",
+                "values": [5, 10, 20, 50]
+            },
+            "Slow": {
+                "type": "int",
+                "values": [15, 21, 50, 100]
+            }
+        },
+        "Accumulation/Distribution Index": {},
+        "Aroon": {
+            "Period": {
+                "type": "int",
+                "values": [5, 10, 14, 21, 50]
+            },
+            "Scalar": {
+                "type": "float",
+                "values": [50, 100, 150, 200]
+            }
+        },
+        "Average Directional Index (ADX)": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "Signal Period": {
+                "type": "int",
+                "values": []
+            },
+            "Scalar": {
+                "type": "float",
+                "values": []
+            }
+        },
+        "Average True Range": {
+            "Period": {
+                "type": "int",
+                "values": [5, 10, 14, 21, 50]
+            }
+        },
+        "Awesome Oscillator": {
+            "Fast": {
+                "type": "int",
+                "values": []
+            },
+            "Slow": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Chaikin Money Flow": {
+            "Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Commodity Channel Index (CCI)": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "C": {
+                "type": "float",
+                "values": []
+            }
+        },
+        "Donchian Channel": {
+            "Low Period": {
+                "type": "int",
+                "values": []
+            },
+            "Up Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Even Better Sinewave": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "Bars": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Fibonacci's Weighted Moving Average": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "ASC": {
+                "type": "bool",
+                "values": []
+            }
+        },
+        "Fisher Transform": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "Signal Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Gann High-Low Activator": {
+            "High Period": {
+                "type": "int",
+                "values": []
+            },
+            "Low Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Keltner Channel": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "Scalar": {
+                "type": "float",
+                "values": []
+            }
+        },
+        "MACD": {
+            "Fast EMA": {
+                "type": "int",
+                "values": []
+            },
+            "Slow EMA": {
+                "type": "int",
+                "values": []
+            },
+            "MACD SMA": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Mass Index": {
+            "Fast": {
+                "type": "int",
+                "values": []
+            },
+            "Slow": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Momentum": {
+            "Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Money Flow Index": {
+            "Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Moving Average": {
+            "Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "On Balance Volume": {},
+        "Relative Strength Index (RSI)": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "Scalar": {
+                "type": "float",
+                "values": []
+            }
+        },
+        "Relative Vigor Index (RVGI)": {
+            "Period": {
+                "type": "int",
+                "values": []
+            },
+            "SWMA Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Stohastic Oscillator": {
+            "K": {
+                "type": "int",
+                "values": []
+            },
+            "D": {
+                "type": "int",
+                "values": []
+            },
+            "Smooth K": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "True Strength Index (TSI)": {
+            "Fast": {
+                "type": "int",
+                "values": []
+            },
+            "Slow": {
+                "type": "int",
+                "values": []
+            },
+            "Signal Period": {
+                "type": "int",
+                "values": []
+            },
+            "Scalar": {
+                "type": "float",
+                "values": []
+            }
+        },
+        "Vertical Horizontal Filter": {
+            "Period": {
+                "type": "int",
+                "values": []
+            }
+        },
+        "Vortex": {
+            "Period": {
+                "type": "int",
+                "values": []
+            }
+        }
+    },
+    "candlestick_pattern": {
+        "CDL2CROWS": {},
+        "CDL3BLACKCROWS": {},
+        "CDL3INSIDE": {},
+        "CDL3LINESTRIKE": {},
+        "CDL3OUTSIDE": {},
+        "CDL3STARSINSOUTH": {},
+        "CDL3WHITESOLDIERS": {},
+        "CDLABANDONEDBABY": {},
+        "CDLADVANCEBLOCK": {},
+        "CDLBELTHOLD": {},
+        "CDLBREAKAWAY": {},
+        "CDLCLOSINGMARUBOZU": {},
+        "CDLCONCEALBABYSWALL": {},
+        "CDLCOUNTERATTACK": {},
+        "CDLDARKCLOUDCOVER": {},
+        "CDLDOJI": {},
+        "CDLDOJISTAR": {},
+        "CDLDRAGONFLYDOJI": {},
+        "CDLENGULFING": {},
+        "CDLEVENINGDOJISTAR": {},
+        "CDLEVENINGSTAR": {},
+        "CDLGAPSIDESIDEWHITE": {},
+        "CDLGRAVESTONEDOJI": {},
+        "CDLHAMMER": {},
+        "CDLHANGINGMAN": {},
+        "CDLHARAMI": {},
+        "CDLHARAMICROSS": {},
+        "CDLHIGHWAVE": {},
+        "CDLHIKKAKE": {},
+        "CDLHIKKAKEMOD": {},
+        "CDLHOMINGPIGEON": {},
+        "CDLIDENTICAL3CROWS": {},
+        "CDLINNECK": {},
+        "CDLINVERTEDHAMMER": {},
+        "CDLKICKING": {},
+        "CDLKICKINGBYLENGTH": {},
+        "CDLLADDERBOTTOM": {},
+        "CDLLONGLEGGEDDOJI": {},
+        "CDLLONGLINE": {},
+        "CDLMARUBOZU": {},
+        "CDLMATCHINGLOW": {},
+        "CDLMATHOLD": {},
+        "CDLMORNINGDOJISTAR": {},
+        "CDLMORNINGSTAR": {},
+        "CDLONNECK": {},
+        "CDLPIERCING": {},
+        "CDLRICKSHAWMAN": {},
+        "CDLRISEFALL3METHODS": {},
+        "CDLSEPARATINGLINES": {},
+        "CDLSHOOTINGSTAR": {},
+        "CDLSHORTLINE": {},
+        "CDLSPINNINGTOP": {},
+        "CDLSTALLEDPATTERN": {},
+        "CDLSTICKSANDWICH": {},
+        "CDLTAKURI": {},
+        "CDLTASUKIGAP": {},
+        "CDLTHRUSTING": {},
+        "CDLTRISTAR": {},
+        "CDLUNIQUE3RIVER": {},
+        "CDLUPSIDEGAP2CROWS": {},
+        "CDLXSIDEGAP3METHODS": {}
+    },
+    "pattern": {
+        "Head And Shoulders": {},
+        "Triangle": {},
+        "Wedge": {},
+        "Multiple Tops/Bottoms": {},
+        "Channel": {},
+        "Double Top/Bottom": {}
+    }
+}

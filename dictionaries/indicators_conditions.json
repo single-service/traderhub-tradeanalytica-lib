@@ -1,0 +1,97 @@
+{
+    "Aberration": [
+        "self",
+        "price"
+    ],
+    "Absolute Price Oscillator": [
+        "self",
+        "value:0"
+    ],
+    "Accumulation/Distribution Index": [
+        "value:0"
+    ],
+    "Average Directional Index (ADX)": [
+        "self"
+    ],
+    "Average True Range": [
+        "self"
+    ],
+    "Aroon": [
+        "self",
+        "value:30,70"
+    ],
+
+    "Awesome Oscillator": [
+        "value:0"
+    ],
+    "Chaikin Money Flow": [
+        "value:0"
+    ],
+    "Commodity Channel Index (CCI)": [
+        "value:0,100,-100"
+    ],
+    "Donchian Channel": [
+        "self",
+        "price"
+    ],
+    "Even Better Sinewave": [
+        "value:0,1,-1"
+    ],
+
+    "Fibonacci's Weighted Moving Average": [
+        "price"
+    ],
+    "Fisher Transform": [
+        "value:0"
+    ],
+    "Gann High-Low Activator": [
+        "self",
+        "price"
+    ],
+    "Keltner Channel": [
+        "self",
+        "price"
+    ],
+    "MACD": [
+        "self",
+        "value:0"
+    ],
+    "Mass Index": [
+        "value:8,12"
+    ],
+
+    "Momentum": [
+        "value:0"
+    ],
+    "Money Flow Index": [
+        "value:20,30,50,70,80"
+    ],
+    "Moving Average": [
+        "self",
+        "price"
+    ],
+    "On Balance Volume": [
+        "self"
+    ],
+    "Relative Strength Index (RSI)": [
+        "value:20,30,50,70,80"
+    ],
+
+    "Relative Vigor Index (RVGI)": [
+        "self",
+        "value:0"
+    ],
+    "Stohastic Oscillator": [
+        "self",
+        "value:20,30,70,80"
+    ],
+    "True Strength Index (TSI)": [
+        "self"
+    ],
+    "Vertical Horizontal Filter": [
+        "self"
+    ],
+    "Vortex": [
+        "self"
+    ]
+}

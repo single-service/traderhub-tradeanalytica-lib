@@ -1,0 +1,1339 @@
+{
+    "indicators": {
+        "Aberration": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 5
+            },
+            "ATR Period": {
+                "type": "int",
+                "options": null,
+                "default": 15
+            },
+            "ATR Type": {
+                "type": "select",
+                "options": [
+                    "zg",
+                    "sg",
+                    "xg",
+                    "atr"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Absolute Price Oscillator": {
+            "Fast": {
+                "type": "int",
+                "options": null,
+                "default": 12
+            },
+            "Slow": {
+                "type": "int",
+                "options": null,
+                "default": 26
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Accumulation/Distribution Index": {
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Aroon": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Scalar": {
+                "type": "float",
+                "options": null,
+                "default": 100
+            },
+            "Aroon Type": {
+                "type": "select",
+                "options": [
+                    "aroon_up",
+                    "aroon_down",
+                    "aroon_osc"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Average Directional Index (ADX)": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Signal Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Scalar": {
+                "type": "float",
+                "options": null,
+                "default": 100
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "ADX Type": {
+                "type": "select",
+                "options": [
+                    "adx",
+                    "dmp",
+                    "dmn"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Average True Range": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Awesome Oscillator": {
+            "Fast": {
+                "type": "int",
+                "options": null,
+                "default": 5
+            },
+            "Slow": {
+                "type": "int",
+                "options": null,
+                "default": 34
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Chaikin Money Flow": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 20
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Commodity Channel Index (CCI)": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "C": {
+                "type": "float",
+                "options": null,
+                "default": 0.015
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Donchian Channel": {
+            "Low Period": {
+                "type": "int",
+                "options": null,
+                "default": 20
+            },
+            "Up Period": {
+                "type": "int",
+                "options": null,
+                "default": 20
+            },
+            "Donchian Type": {
+                "type": "select",
+                "options": [
+                    "lower",
+                    "mid",
+                    "upper"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Even Better Sinewave": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 40
+            },
+            "Bars": {
+                "type": "int",
+                "options": null,
+                "default": 10
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Fibonacci's Weighted Moving Average": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 10
+            },
+            "ASC": {
+                "type": "bool",
+                "options": null,
+                "default": true
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Fisher Transform": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 9
+            },
+            "Signal Period": {
+                "type": "int",
+                "options": null,
+                "default": 1
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Gann High-Low Activator": {
+            "High Period": {
+                "type": "int",
+                "options": null,
+                "default": 13
+            },
+            "Low Period": {
+                "type": "int",
+                "options": null,
+                "default": 21
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "Indicator Type": {
+                "type": "select",
+                "options": [
+                    "HILO (line)",
+                    "HILOl (long)",
+                    "HILOs (short)"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Keltner Channel": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 20
+            },
+            "Scalar": {
+                "type": "float",
+                "options": null,
+                "default": 2
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "Channel Type": {
+                "type": "select",
+                "options": [
+                    "lower",
+                    "basis",
+                    "upper"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "MACD": {
+            "Fast EMA": {
+                "type": "int",
+                "options": null,
+                "default": 12
+            },
+            "Slow EMA": {
+                "type": "int",
+                "options": null,
+                "default": 26
+            },
+            "MACD SMA": {
+                "type": "int",
+                "options": null,
+                "default": 9
+            },
+            "Apply To": {
+                "type": "select",
+                "options": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            "Indicator Buffer": {
+                "type": "select",
+                "options": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Mass Index": {
+            "Fast": {
+                "type": "int",
+                "options": null,
+                "default": 9
+            },
+            "Slow": {
+                "type": "int",
+                "options": null,
+                "default": 25
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Momentum": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Apply To": {
+                "type": "select",
+                "options": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Money Flow Index": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Moving Average": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "Apply To": {
+                "type": "select",
+                "options": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "On Balance Volume": {
+            "Apply To": {
+                "type": "select",
+                "options": [
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Relative Strength Index (RSI)": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Scalar": {
+                "type": "float",
+                "options": null,
+                "default": 100
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Relative Vigor Index (RVGI)": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "SWMA Period": {
+                "type": "int",
+                "options": null,
+                "default": 4
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Stohastic Oscillator": {
+            "K": {
+                "type": "int",
+                "options": null,
+                "default": 5
+            },
+            "D": {
+                "type": "int",
+                "options": null,
+                "default": 3
+            },
+            "Smooth K": {
+                "type": "int",
+                "options": null,
+                "default": 2
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "Price Field": {
+                "type": "select",
+                "options": [
+                    "Low/High",
+                    "Close/Close"
+                ],
+                "default": null
+            },
+            "Indicator Buffer": {
+                "type": "select",
+                "options": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "True Strength Index (TSI)": {
+            "Fast": {
+                "type": "int",
+                "options": null,
+                "default": 13
+            },
+            "Slow": {
+                "type": "int",
+                "options": null,
+                "default": 25
+            },
+            "Signal Period": {
+                "type": "int",
+                "options": null,
+                "default": 12
+            },
+            "Scalar": {
+                "type": "float",
+                "options": null,
+                "default": 100
+            },
+            "MA Method": {
+                "type": "select",
+                "options": [
+                    "Simple",
+                    "Exponential",
+                    "Smoothed"
+                ],
+                "default": null
+            },
+            "Indicator Type": {
+                "type": "select",
+                "options": [
+                    "Base line",
+                    "Signal line"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Vertical Horizontal Filter": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        },
+        "Vortex": {
+            "Period": {
+                "type": "int",
+                "options": null,
+                "default": 14
+            },
+            "Vortex Type": {
+                "type": "select",
+                "options": [
+                    "vip",
+                    "vim"
+                ],
+                "default": null
+            },
+            "Shift": {
+                "type": "int",
+                "options": null,
+                "default": 0
+            }
+        }
+    },
+    "price": {
+        "Bid": {},
+        "Ask": {}
+    },
+    "candlestick_pattern": {
+        "CDL2CROWS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDL3BLACKCROWS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDL3INSIDE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDL3LINESTRIKE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDL3OUTSIDE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDL3STARSINSOUTH": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDL3WHITESOLDIERS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLABANDONEDBABY": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLADVANCEBLOCK": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLBELTHOLD": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLBREAKAWAY": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLCLOSINGMARUBOZU": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLCONCEALBABYSWALL": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLCOUNTERATTACK": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLDARKCLOUDCOVER": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLDOJI": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLDOJISTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLDRAGONFLYDOJI": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLENGULFING": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLEVENINGDOJISTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLEVENINGSTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLGAPSIDESIDEWHITE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLGRAVESTONEDOJI": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHAMMER": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHANGINGMAN": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHARAMI": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHARAMICROSS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHIGHWAVE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHIKKAKE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHIKKAKEMOD": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLHOMINGPIGEON": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLIDENTICAL3CROWS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLINNECK": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLINVERTEDHAMMER": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLKICKING": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLKICKINGBYLENGTH": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLLADDERBOTTOM": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLLONGLEGGEDDOJI": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLLONGLINE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLMARUBOZU": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLMATCHINGLOW": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLMATHOLD": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLMORNINGDOJISTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLMORNINGSTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLONNECK": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLPIERCING": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLRICKSHAWMAN": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLRISEFALL3METHODS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLSEPARATINGLINES": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLSHOOTINGSTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLSHORTLINE": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLSPINNINGTOP": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLSTALLEDPATTERN": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLSTICKSANDWICH": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLTAKURI": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLTASUKIGAP": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLTHRUSTING": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLTRISTAR": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLUNIQUE3RIVER": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLUPSIDEGAP2CROWS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        },
+        "CDLXSIDEGAP3METHODS": {
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Grow",
+                    "Fall"
+                ],
+                "default": null
+            }
+        }
+    },
+    "pattern": {
+        "Head And Shoulders": {
+            "Window": {
+                "type": "int",
+                "options": null,
+                "default": 5
+            },
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Head and Shoulder",
+                    "Inverse Head and Shoulder"
+                ],
+                "default": null
+            }
+        },
+        "Triangle": {
+            "Window": {
+                "type": "int",
+                "options": null,
+                "default": 5
+            },
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Ascending Triangle",
+                    "Descending Triangle"
+                ],
+                "default": null
+            }
+        },
+        "Wedge": {
+            "Window": {
+                "type": "int",
+                "options": null,
+                "default": 5
+            },
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Wedge Up",
+                    "Wedge Down"
+                ],
+                "default": null
+            }
+        },
+        "Multiple Tops/Bottoms": {
+            "Window": {
+                "type": "int",
+                "options": null,
+                "default": 15
+            },
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Multiple Top",
+                    "Multiple Bottom"
+                ],
+                "default": null
+            }
+        },
+        "Channel": {
+            "Window": {
+                "type": "int",
+                "options": null,
+                "default": 15
+            },
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Channel Up",
+                    "Channel Down"
+                ],
+                "default": null
+            }
+        },
+        "Double Top/Bottom": {
+            "Window": {
+                "type": "int",
+                "options": null,
+                "default": 15
+            },
+            "Type": {
+                "type": "select",
+                "options": [
+                    "Double Top",
+                    "Double Bottom"
+                ],
+                "default": null
+            }
+        }
+    }
+}
