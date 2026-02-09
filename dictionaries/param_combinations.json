@@ -34,15 +34,15 @@
         "Average Directional Index (ADX)": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "Signal Period": {
                 "type": "int",
-                "values": []
+                "values": [14, 21, 50]
             },
             "Scalar": {
                 "type": "float",
-                "values": []
+                "values": [50, 100, 150, 200]
             }
         },
         "Average True Range": {
@@ -54,194 +54,194 @@
         "Awesome Oscillator": {
             "Fast": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Slow": {
                 "type": "int",
-                "values": []
+                "values": [14, 21, 50]
             }
         },
         "Chaikin Money Flow": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             }
         },
         "Commodity Channel Index (CCI)": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "C": {
                 "type": "float",
-                "values": []
+                "values": [100]
             }
         },
         "Donchian Channel": {
             "Low Period": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Up Period": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             }
         },
         "Even Better Sinewave": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "Bars": {
                 "type": "int",
-                "values": []
+                "values": [5, 10,15]
             }
         },
         "Fibonacci's Weighted Moving Average": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "ASC": {
                 "type": "bool",
-                "values": []
+                "values": [true, false]
             }
         },
         "Fisher Transform": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "Signal Period": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21, 50]
             }
         },
         "Gann High-Low Activator": {
             "High Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "Low Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         },
         "Keltner Channel": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "Scalar": {
                 "type": "float",
-                "values": []
+                "values": [100]
             }
         },
         "MACD": {
             "Fast EMA": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Slow EMA": {
                 "type": "int",
-                "values": []
+                "values": [14, 21, 50]
             },
             "MACD SMA": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         },
         "Mass Index": {
             "Fast": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Slow": {
                 "type": "int",
-                "values": []
+                "values": [14, 21, 50]
             }
         },
         "Momentum": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         },
         "Money Flow Index": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         },
         "Moving Average": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         },
         "On Balance Volume": {},
         "Relative Strength Index (RSI)": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "Scalar": {
                 "type": "float",
-                "values": []
+                "values": [100]
             }
         },
         "Relative Vigor Index (RVGI)": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             },
             "SWMA Period": {
                 "type": "int",
-                "values": []
+                "values": [14, 21, 50]
             }
         },
         "Stohastic Oscillator": {
             "K": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "D": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Smooth K": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             }
         },
         "True Strength Index (TSI)": {
             "Fast": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Slow": {
                 "type": "int",
-                "values": []
+                "values": [14, 21, 50]
             },
             "Signal Period": {
                 "type": "int",
-                "values": []
+                "values": [5, 10, 14, 21]
             },
             "Scalar": {
                 "type": "float",
-                "values": []
+                "values": [100]
             }
         },
         "Vertical Horizontal Filter": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         },
         "Vortex": {
             "Period": {
                 "type": "int",
-                "values": []
+                "values": [10, 14, 21, 50]
             }
         }
     },
